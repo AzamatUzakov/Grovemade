@@ -112,9 +112,14 @@ a {
 
 .designSectionMain {
   display: flex;
-  gap: 12px;
+  gap: 0px;
+  justify-content: center;
+  align-items: center;
 }
 
+.laptopBox{
+  width: 100%;
+}
 .laptopBox p {
   font-weight: 400;
   font-size: 27px;
@@ -123,7 +128,7 @@ a {
 }
 
 .laptopBox img {
-  width: 100%;
+  width: 90%;
 }
 
 .laptopBox a {
@@ -220,4 +225,47 @@ a {
 .productTxt img{
  max-width: 100%;
 margin-top: 23px;
+}
+.galleryBox{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-rows: 271px;
+  justify-content: center;
+  gap: 15px ;
+  flex-wrap: wrap;
+
+}
+.galleryBox img{
+  width: 203px;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.joinUs{
+  margin-top: 90px;
+}
+
+.joinUs h1{
+font-weight: 400;
+font-size: 34px;
+line-height: 36px;
+}
+.joinUs p{
+font-weight: 400;
+font-size: 13px;
+line-height: 21px;
+letter-spacing: 1.4px;
+margin-top: 35px;
+}
+
+.bilbordBox{
+
+  width: 100%;
+  height: 404px;
+  background-color: #9AA8B1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+flex-direction: column;
 }

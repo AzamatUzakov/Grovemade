@@ -10,6 +10,34 @@ import mac from "../public/mac.png"
 import tabPhone from "../public/tabPhone.png"
 import homeHero from "../public/homeHero.png"
 import hardImg from "../public/hard.png"
+import bilbordLogo from "../public/bilbordLogo.png"
+import l1 from "../public/l1.png"
+import l2 from "../public/r2.png"
+import l3 from "../public/l3.png"
+import l4 from "../public/l4.png"
+import l5 from "../public/l5.png"
+import l6 from "../public/l6.png"
+import l7 from "../public/l7.png"
+import l8 from "../public/l8.png"
+import l9 from "../public/l9.png"
+import l10 from "../public/l10.png"
+import l11 from "../public/l11.png"
+import l12 from "../public/l12.png"
+import l13 from "../public/l13.png"
+import l14 from "../public/l14.png"
+import l15 from "../public/l15.png"
+import l16 from "../public/l16.png"
+import l17 from "../public/l17.png"
+//import l18 from "../public/l18.png"
+import l19 from "../public/l19.png"
+import l20 from "../public/l20.png"
+import l21 from "../public/l21.png"
+import l22 from "../public/l22.png"
+import l23 from "../public/l23.png"
+import l24 from "../public/l24.png"
+import l25 from "../public/l25.png"
+
+
 
 const laptopArr = [
   {
@@ -53,7 +81,59 @@ const technics = [
   },
 
 ]
+const gallery = [
+  {
+    img: l1
+  },
+  {
+    img: l2
+  }, {
+    img: l3
+  }, {
+    img: l4
+  }, {
+    img: l5
+  }, {
+    img: l6
+  }, {
+    img: l7
+  }, {
+    img: l8
+  }, {
+    img: l9
+  }, {
+    img: l10
+  }, {
+    img: l11
+  }, {
+    img: l12
+  }, {
+    img: l13
+  }, {
+    img: l14
+  }, {
+    img: l15
+  }, {
+    img: l16
+  }, {
+    img: l17
 
+  }, {
+    img: l19
+  }, {
+    img: l20
+  }, {
+    img: l21
+  }, {
+    img: l22
+  }, {
+    img: l23
+  }, {
+    img: l24
+  }, {
+    img: l25
+  }
+]
 console.log(laptopArr);
 
 function App() {
@@ -75,8 +155,12 @@ function App() {
 
       <OfficeHero />
       <MadeTheHardWay />
-      <MakeWork />
+        <MakeWork />
+      <div className="galleryBox">
+        {gallery.map((item, index) => (<MakeWorkGallery key={index} item={item} />))}
+      </div>
 
+      <JoinUs/>
     </>
   );
 }
@@ -203,11 +287,30 @@ function MakeWork() {
 }
 
 
-function MakeWorkGallery(params) {
-  return(
+function MakeWorkGallery({item}) {
+  return (
+    <div>
+      <img src={item.img} alt="" />
+    </div>
 
-    
   )
 }
+
+
+function JoinUs() {
+  return(
+    <section className="joinUs">
+      <h1>We Hope You'll Join Us</h1>
+      <p>READ MORE ABOUT OUR STORY</p>
+
+      <div className="bilbordBox">
+        <img src={bilbordLogo} alt="" />
+      <h3>Design Inspires</h3>
+      <p>Build your dream workspace, so you can get your best work done.</p>
+      </div>
+    </section>
+  )
+}
+
 
 export default App;
