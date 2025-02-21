@@ -1,0 +1,173 @@
+@media (max-width:1024px) {}
+
+@media(max-width:768px) {
+    .titles h1 {
+        font-size: 30px;
+        white-space: nowrap;
+    }
+
+    .titles p,
+    a {
+        font-size: 12px;
+    }
+
+    .titles p {
+        margin: 6px 0 10px;
+    }
+
+    .designSection h1 {
+        font-size: 30px;
+    }
+
+    .designSection p {
+        font-weight: 400;
+        font-size: 12px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .laptopBox p {
+        font-weight: 400;
+        font-size: 20px;
+        margin: 10px 0 10px;
+    }
+
+    .productTxt h1 {
+        font-size: 28px;
+    }
+
+    .productTxt p {
+        font-size: 12px;
+        margin-top: 14px
+    }
+
+    .sliders {
+        margin-top: 20px;
+    }
+
+    .FeaturedProductsMainBox {
+        padding: 9px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .FeaturedProductsMainBox .elem {
+        width: 200px;
+    }
+
+
+    .joinUs h1 {
+        font-size: 28px;
+    }
+
+    .joinUs p {
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 21px;
+        letter-spacing: 1.4px;
+        margin-top: 25px;
+    }
+
+    .bilbordBox h3 {
+        font-size: 30px;
+        margin: 15px 0;
+    }
+
+    .joinUs p {
+        margin-top: 15px;
+    }
+
+    .theHardDesc {
+        width: 80%;
+    }
+
+    .galleryBox {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        grid-auto-rows: 251px;
+    }
+
+    .galleryBox img {
+        width: 180px;
+    }
+
+}
+
+@media(max-width:490px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px 20px;
+    }
+    .headerLogo img{
+        width: 60%;
+    }
+    .leftNav{
+        display: block;
+    }
+    .galleryBox {
+        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+        grid-auto-rows: 160px;
+    }
+
+    .galleryBox img {
+        width: 130px;
+    }
+    footer{
+        height: 100%;
+    }
+    .footerNavBox {
+        display: block;
+    }
+    .leftFooterNav a{
+        text-align: center !important;
+    }
+    .rightFooterInfo{
+        margin: 100px 0; 
+        width: 100%;
+        text-align: center;
+    }
+    .rightFooterInfo  hr{
+        width: 100%;
+    }
+
+    .FeaturedProductsMainBox {
+        padding: 9px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    }
+
+    .FeaturedProductsMainBox .elem {
+        width: 160px;
+    }
+    .titles h1 {
+        font-size: 24px;
+    }
+    .titles p {
+        margin: -12px 0 -1px;
+    }
+    .bottomInfo {
+    font-size: 8px;
+    margin-top: 50px !important;
+    }
+}
+@media(max-width:420px) {
+    .galleryBox {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        grid-auto-rows: 140px;
+    }
+
+    .galleryBox img {
+        width: 120px;
+    }
+}
+@media(max-width: 375px) {
+    .galleryBox {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-auto-rows: 130px;
+    }
+
+    .galleryBox img {
+        width: 100px;
+    }
+}

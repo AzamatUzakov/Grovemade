@@ -1,5 +1,5 @@
 import "./App.css";
-
+import "./media.css"
 import headerLogo from "/public/headerLogo.png";
 import heroImg from "../public/topBg.png";
 import padsImg from "../public/pads.png"
