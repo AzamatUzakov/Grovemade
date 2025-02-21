@@ -155,19 +155,20 @@ function App() {
 
       <OfficeHero />
       <MadeTheHardWay />
-        <MakeWork />
+      <MakeWork />
       <div className="galleryBox">
         {gallery.map((item, index) => (<MakeWorkGallery key={index} item={item} />))}
       </div>
 
-      <JoinUs/>
+      <JoinUs />
+<Footer/>
     </>
   );
 }
 
 function Header() {
   return (
-    <>
+    
       <header>
         <div className="leftNav">
           <p>Shop</p> <p>Explore</p>
@@ -179,13 +180,13 @@ function Header() {
 
         <p className="rightNav">My Cart</p>
       </header>
-    </>
+    
   );
 }
 
 function Hero() {
   return (
-    <>
+    
       <div className="mainHeroBox">
         <div className="heroBg">
           <img src={heroImg} alt="" />
@@ -196,7 +197,7 @@ function Hero() {
           <a href="#">LEARN MORE</a>
         </div>
       </div>
-    </>
+    
   );
 }
 
@@ -211,7 +212,7 @@ function DesignTitle() {
 }
 function DesignInspires({ item }) {
   return (
-    <>
+    
       <div className="laptopBox">
         <div className="item">
           <img src={item.img} alt="" />
@@ -219,7 +220,7 @@ function DesignInspires({ item }) {
           <a href="#">LEARN MORE</a>
         </div>
       </div>
-    </>
+    
   );
 }
 
@@ -249,7 +250,7 @@ function FeaturedProducts({ item }) {
 }
 function OfficeHero() {
   return (
-    <>
+    
       <div className="mainHeroBox officHero">
         <div className="heroBg">
           <img src={homeHero} alt="" />
@@ -260,7 +261,7 @@ function OfficeHero() {
           <a href="#">LEARN MORE</a>
         </div>
       </div>
-    </>
+    
   );
 }
 
@@ -287,7 +288,7 @@ function MakeWork() {
 }
 
 
-function MakeWorkGallery({item}) {
+function MakeWorkGallery({ item }) {
   return (
     <div>
       <img src={item.img} alt="" />
@@ -298,19 +299,43 @@ function MakeWorkGallery({item}) {
 
 
 function JoinUs() {
-  return(
+  return (
     <section className="joinUs">
       <h1>We Hope You'll Join Us</h1>
       <p>READ MORE ABOUT OUR STORY</p>
 
       <div className="bilbordBox">
         <img src={bilbordLogo} alt="" />
-      <h3>Design Inspires</h3>
-      <p>Build your dream workspace, so you can get your best work done.</p>
+        <h3>Design Inspires</h3>
+        <p>Build your dream workspace, so you can get your best work done.</p>
       </div>
     </section>
   )
 }
 
+
+function Footer() {
+  return (
+    <footer>
+      <div className="footerNavBox">
+        <div className="leftFooterNav">
+          <a href="#">Shop</a>
+          <a href="#">About</a>
+          <a href="#">Journal</a>
+          <a href="#">Support</a>
+          <a href="#">COVID-19 Info</a>
+          <a href="#">Order Status</a>
+          <a href="#">Corporate Sales</a>
+        </div>
+
+         <div className="rightFooterInfo">
+          <h4>Newsletter Signup</h4>
+          <p>Sign up to our Newsletter to hear about new product releases, learn about our design process, and everything else going on behind the scenes at Grovemade.</p>
+          <hr />
+         </div>
+      </div>
+    </footer>
+  )
+}
 
 export default App;

@@ -18,6 +18,7 @@ body {
   background-color: white;
 }
 
+/* /////////////////////////////////// */
 header {
   display: flex;
   align-items: center;
@@ -45,6 +46,7 @@ header p:hover {
   text-shadow: -2px -1px 4px #000000;
 }
 
+/* /////////////////////////////////// */
 .heroBg img {
   width: 100%;
 }
@@ -84,6 +86,7 @@ a {
   text-decoration: none;
 }
 
+/* /////////////////////////////////// */
 .designSection {
   margin: 80px 0;
 }
@@ -110,6 +113,8 @@ a {
   color: #000000;
 }
 
+
+/* /////////////////////////////////// */
 .designSectionMain {
   display: flex;
   gap: 0px;
@@ -117,9 +122,10 @@ a {
   align-items: center;
 }
 
-.laptopBox{
+.laptopBox {
   width: 100%;
 }
+
 .laptopBox p {
   font-weight: 400;
   font-size: 27px;
@@ -140,7 +146,7 @@ a {
 
 
 
-
+/* /////////////////////////////////// */
 .productTxt {
   margin: 80px 0;
 }
@@ -174,6 +180,7 @@ a {
   margin-top: 40px;
 }
 
+/* /////////////////////////////////// */
 .FeaturedProductsMainBox {
   display: flex;
   align-items: center;
@@ -204,68 +211,144 @@ a {
 }
 
 
-.officHero{
-  margin: 100px 0 ; 
+/* /////////////////////////////////// */
+.officHero {
+  margin: 100px 0;
 }
+
 .officHero h1 {
   font-size: 60px;
   width: 100%;
   white-space: nowrap;
   line-height: 70px;
 }
-.officHero p{
+
+.officHero p {
   margin-top: 14px;
 }
 
-.theHardDesc{
+/* /////////////////////////////////// */
+.theHardDesc {
   width: 60%;
   text-align: center;
   margin: auto;
 }
-.productTxt img{
- max-width: 100%;
-margin-top: 23px;
+
+.productTxt img {
+  max-width: 100%;
+  margin-top: 23px;
 }
-.galleryBox{
+
+/* /////////////////////////////////// */
+.galleryBox {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-auto-rows: 271px;
   justify-content: center;
-  gap: 15px ;
+  gap: 15px;
   flex-wrap: wrap;
 
 }
-.galleryBox img{
+
+.galleryBox img {
   width: 203px;
   height: 100%;
   object-fit: cover;
 }
 
 
-.joinUs{
+
+
+/* /////////////////////////////////// */
+.joinUs {
   margin-top: 90px;
 }
 
-.joinUs h1{
-font-weight: 400;
-font-size: 34px;
-line-height: 36px;
-}
-.joinUs p{
-font-weight: 400;
-font-size: 13px;
-line-height: 21px;
-letter-spacing: 1.4px;
-margin-top: 35px;
+.joinUs h1 {
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 36px;
 }
 
-.bilbordBox{
+.joinUs p {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 21px;
+  letter-spacing: 1.4px;
+  margin-top: 35px;
+}
 
+.bilbordBox {
+  margin-top: 100px;
   width: 100%;
   height: 404px;
   background-color: #9AA8B1;
   display: flex;
   align-items: center;
   justify-content: center;
-flex-direction: column;
+  flex-direction: column;
+}
+
+.bilbordBox h3 {
+  font-weight: 400;
+  font-size: 43px;
+  line-height: 58px;
+  margin: 23px 0;
+  color: white;
+}
+
+.bilbordBox p {
+  margin-top: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.8px;
+  color: white;
+}
+
+/* /////////////////////////////// */
+
+footer {
+  width: 100%;
+  height: 468px;
+  background-color: #f9f9f9;
+  color: black !important;
+  padding: 70px 50px 18px;
+  margin-top: 40px;
+}
+
+.footerNavBox {
+  display: flex;
+  gap: 20px;
+}
+
+.leftFooterNav a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 35px;
+  display: block;
+  text-align: start !important;
+}
+
+.rightFooterInfo{
+  width: 300px;
+  text-align: start;
+}
+
+.rightFooterInfo h4{
+font-weight: 400;
+font-size: 22px;
+margin-bottom: 20px;
+}
+.rightFooterInfo p{
+font-weight: 400;
+font-size: 14px;
+line-height: 16.41px;
+color: #A0A0A0;
+margin-bottom: 80px;
+}
+.rightFooterInfo hr{
+  width: 80%;
 }
