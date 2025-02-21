@@ -161,43 +161,43 @@ function App() {
       </div>
 
       <JoinUs />
-<Footer/>
+      <Footer />
     </>
   );
 }
 
 function Header() {
   return (
-    
-      <header>
-        <div className="leftNav">
-          <p>Shop</p> <p>Explore</p>
-        </div>
 
-        <div className="headerLogo">
-          <img src={headerLogo} alt="headerLogo" />
-        </div>
+    <header id="topScrool">
+      <div className="leftNav">
+        <p>Shop</p> <p>Explore</p>
+      </div>
 
-        <p className="rightNav">My Cart</p>
-      </header>
-    
+      <div className="headerLogo">
+        <img src={headerLogo} alt="headerLogo" />
+      </div>
+
+      <p className="rightNav">My Cart</p>
+    </header>
+
   );
 }
 
 function Hero() {
   return (
-    
-      <div className="mainHeroBox">
-        <div className="heroBg">
-          <img src={heroImg} alt="" />
-        </div>
-        <div className="titles">
-          <h1>The Desk Shelf System</h1>
-          <p>Available in Walnut or Maple</p>
-          <a href="#">LEARN MORE</a>
-        </div>
+
+    <div className="mainHeroBox">
+      <div className="heroBg">
+        <img src={heroImg} alt="" />
       </div>
-    
+      <div className="titles">
+        <h1>The Desk Shelf System</h1>
+        <p>Available in Walnut or Maple</p>
+        <a href="#">LEARN MORE</a>
+      </div>
+    </div>
+
   );
 }
 
@@ -212,15 +212,15 @@ function DesignTitle() {
 }
 function DesignInspires({ item }) {
   return (
-    
-      <div className="laptopBox">
-        <div className="item">
-          <img src={item.img} alt="" />
-          <p>{item.txt}</p>
-          <a href="#">LEARN MORE</a>
-        </div>
+
+    <div className="laptopBox">
+      <div className="item">
+        <img src={item.img} alt="" />
+        <p>{item.txt}</p>
+        <a href="#">LEARN MORE</a>
       </div>
-    
+    </div>
+
   );
 }
 
@@ -250,18 +250,18 @@ function FeaturedProducts({ item }) {
 }
 function OfficeHero() {
   return (
-    
-      <div className="mainHeroBox officHero">
-        <div className="heroBg">
-          <img src={homeHero} alt="" />
-        </div>
-        <div className="titles">
-          <h1 className="homeTitle">Home Office Inspiration</h1>
-          <p>Working from home can be a challenge—see some creative solutions to get it just right.</p>
-          <a href="#">LEARN MORE</a>
-        </div>
+
+    <div className="mainHeroBox officHero">
+      <div className="heroBg">
+        <img src={homeHero} alt="" />
       </div>
-    
+      <div className="titles">
+        <h1 className="homeTitle">Home Office Inspiration</h1>
+        <p>Working from home can be a challenge—see some creative solutions to get it just right.</p>
+        <a href="#">LEARN MORE</a>
+      </div>
+    </div>
+
   );
 }
 
@@ -328,11 +328,20 @@ function Footer() {
           <a href="#">Corporate Sales</a>
         </div>
 
-         <div className="rightFooterInfo">
+        <div className="rightFooterInfo">
           <h4>Newsletter Signup</h4>
           <p>Sign up to our Newsletter to hear about new product releases, learn about our design process, and everything else going on behind the scenes at Grovemade.</p>
           <hr />
-         </div>
+        </div>
+      </div>
+
+      <a href="#topScrool"> <button className="goUpBtn">GO <br /> UP</button></a>
+
+      <div className="bottomInfo">
+        <p>©2020 Grovemade</p>
+        <p>Terms & Conditions</p>
+        <p>Privacy Policy</p>
+        <p>Site by Department</p>
       </div>
     </footer>
   )
